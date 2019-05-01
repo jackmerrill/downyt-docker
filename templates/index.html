@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YTMP4 - A YouTube Downloader.</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="An ad-free, no bullshit YouTube Downloader.">
+        <meta name="keywords" content="Python,Flask,HTML,CSS,JS,YouTube,Downloader,YouTube Downloader">
+        <meta name="author" content="Jack Merrill">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        {% if message %}
+            <br>
+            <br>
+            <div class="container">
+                <div class="alert alert-danger" role="alert">
+                    Message: {{ message }}
+                </div>
+            </div>
+        {% endif %}
+        <br>
+        <br>
+        <h1 class="hcenter">YTMP4 - A YouTube Downloader.</h1>
+        <br>
+        <h2 class="hcenter">An ad-free YouTube Downloader.</h2>
+        <br>
+        <div class="container">
+            <form class="hcenter" action="" method="post">
+                <h3>YouTube Link</h3>
+                <input type="text" name="Link"/>
+                <input type="submit" value="Download"/>
+            </form>
+        </div>
+    </body>
+    <footer>
+        <style type="text/css">
+            h1, h2, h3, h4, h5 {
+               font-family: Arial; 
+            }
+           .hcenter {
+               text-align: center;
+           } 
+        </style>
+    </footer>
+</html>
